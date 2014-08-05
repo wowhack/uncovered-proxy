@@ -6,8 +6,9 @@ var port = process.env.PORT || 3000;
 var app = express();
 
 app.use(proxyServer.connect({
-  to: 'p.scdn.co',
-  route: ['/']
+  to: 'www.google.com',
+  route: [{action: '/mp3-preview', forward: 'p.scdn.co'},
+          {action: '/image', forward: 'i.scdn.co'}]
 }));
 //app.use(express.favicon());
 //app.use(express.logger('dev'));
