@@ -4,7 +4,7 @@ var proxyServer = require('http-route-proxy');
 var port = process.env.PORT || 3000;
 proxyServer.proxy([
     {
-        from: 'localhost:'+port,
+        from: 'uncovered-proxy.herokuapp.com',
         to: 'p.scdn.co',
     }
 ]);
