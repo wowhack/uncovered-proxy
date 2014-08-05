@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/wowhack/uncovered-proxy",
   "dependencies": {
-    "http-route-proxy": "~0.1.1"
+    "http-route-proxy": "~0.1.1",
+    "express": "~4.7.4"
   }
 }
