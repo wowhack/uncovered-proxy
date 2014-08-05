@@ -8,7 +8,7 @@ var app = express();
 app.use(proxyServer.connect({
   to: 'www.google.com',
   route: [{action: '/mp3-preview', forward: 'p.scdn.co'},
-          {action: '/image', forward: 'i.scdn.co', res: {'access-control-allow-origin': '*'}}]
+          {action: '/image', forward: 'i.scdn.co', headers: {res: {'access-control-allow-origin': '*'}}}]
 }));
 //app.use(express.favicon());
 //app.use(express.logger('dev'));
