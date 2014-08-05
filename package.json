@@ -1,0 +1,22 @@
+{
+  "name": "uncovered-proxy",
+  "version": "1.0.0",
+  "description": "subvert the cross-domain policy hah",
+  "main": "service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wowhack/uncovered-proxy.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wowhack/uncovered-proxy/issues"
+  },
+  "homepage": "https://github.com/wowhack/uncovered-proxy",
+  "dependencies": {
+    "http-route-proxy": "~0.1.1"
+  }
+}
